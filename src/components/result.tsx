@@ -1,11 +1,7 @@
-
 interface Props {
   fecha: string,
   texto?: string
 }
-
-
-
 
 const Result = ({ fecha, texto = "" }: Props) => {
   return (

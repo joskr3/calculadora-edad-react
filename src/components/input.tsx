@@ -1,4 +1,3 @@
-
 interface Props {
   fecha: string,
   placeholder: string
