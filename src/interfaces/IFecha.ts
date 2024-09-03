@@ -10,7 +10,6 @@ export interface Resultado {
   id: number
 }
 
-
 export interface ResultadoEstadoFecha {
   dia: string | number,
   mes: string | number,

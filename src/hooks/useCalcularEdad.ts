@@ -18,7 +18,7 @@ const useCalcularEdad = () => {
       return
     }
 
-    const edad = calcularEdad(+dia, +mes, +anho)
+    const edad = calcularEdad(dia, +mes, +anho)
     setResultado(edad)
   }
   return {

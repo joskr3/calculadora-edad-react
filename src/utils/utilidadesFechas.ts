@@ -8,9 +8,9 @@ export const validarInput = (valor = "", min = 0, max = 0): boolean => {
   return !isNaN(numero) && numero >= min && numero <= max
 }
 
-export const calcularEdad = (dia: string | number, mes: string | number, anho: string | number ): ResultadoEstadoFecha  => {
+export const calcularEdad = (dia: string , mes: string | number, anho: string | number ): ResultadoEstadoFecha  => {
 
-  const fechaNacimiento = new Date(+anho, +mes, +dia)
+  const fechaNacimiento = new Date(+anho, mes as number, parseInt(dia))
   const fechaActual = new Date()
 
   let edadAhnos = fechaActual.getFullYear() - fechaNacimiento.getFullYear()
@@ -34,9 +34,6 @@ export const calcularEdad = (dia: string | number, mes: string | number, anho: s
   }
 
 }
-
-
-
 
 // hoc 
 
