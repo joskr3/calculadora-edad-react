@@ -1,7 +1,7 @@
-export interface Fecha{
+export interface Fecha {
   fecha: string,
   placeholder: string,
-  id:number
+  id: number
 }
 
 export interface Resultado {
@@ -10,3 +10,9 @@ export interface Resultado {
   id: number
 }
 
+
+export interface ResultadoEstadoFecha {
+  dia: string | number,
+  mes: string | number,
+  anho: string | number
+}
